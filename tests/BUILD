@@ -1,6 +1,6 @@
 cc_test(
-  name = "hello_test",
+  name = "BattleShipBoard",
   size = "small",
-  srcs = ["hello_test.cc"],
-  deps = ["@com_google_googletest//:gtest_main"],
+  srcs = ["BattleShipBoardTest.cc"],
+  deps = ["@com_google_googletest//:gtest_main", "//main:BattleShipBoard"],
 )
