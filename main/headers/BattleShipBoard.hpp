@@ -9,8 +9,8 @@ class BattleShipBoard : public BoardInterface {
   const int height;
   public:
   BattleShipBoard(int _width, int _height);
-  int getWidth() const;
-  int getHeight() const;
+  int getWidth() const override;
+  int getHeight() const override;
 };
 
 #endif

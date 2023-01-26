@@ -11,11 +11,6 @@ TEST(BoardTextViewTest, Construct2By2Board) {
   std::unique_ptr<BoardInterface> board = std::make_unique<BattleShipBoard>(2, 2);
   BoardTextView view(std::move(board));
   std::string expectedHeader = "  0|1\n";
-  EXPECT_EQ(
-    view.makeHeader(),
-    expectedHeader
-  );
-
 
   std::string expected = 
   expectedHeader + 
