@@ -1,7 +1,9 @@
 #ifndef __BATTLESHIPBOARD_HPP
 #define __BATTLESHIPBOARD_HPP
 
-class BattleShipBoard {
+#include "../headers/Board.hpp"
+
+class BattleShipBoard : public BoardInterface {
   private:
   const int width;
   const int height;

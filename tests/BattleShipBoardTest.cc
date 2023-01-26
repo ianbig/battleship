@@ -1,5 +1,5 @@
-#include <gtest/gtest.h>
 #include <stdexcept>
+#include <gtest/gtest.h>
 
 #include "../main/headers/BattleShipBoard.hpp"
 
@@ -28,7 +28,7 @@ TEST(BattleShipBoardTest, ConstructorTest) {
 
   EXPECT_THROW(
     {
-      BattleShipBoard boad(0, 20);
+      BattleShipBoard boad( 0, 20);
     }, std::invalid_argument
   );
 }
